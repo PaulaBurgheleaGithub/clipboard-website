@@ -1,0 +1,36 @@
+body {
+}
+header h2 {
+  font-size: 2.875em; /*-->20px /16px */
+}
+
+section header p {
+  font-size: 1.125em !important;
+}
+
+.partners li {
+  margin: 56px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.large-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.super-charge-workflow .feature p {
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners .feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: ;
+  margin-right: ;
+}

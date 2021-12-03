@@ -1,0 +1,25 @@
+footer {
+  height: 300px;
+  text-align: left;
+}
+footer .large-wrapper {
+  display: flex;
+}
+footer h2 {
+  margin-right: 50px;
+}
+footer .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+footer nav {
+  margin: 0;
+  padding-right: 30px;
+}
+
+footer nav a {
+  display: block;
+  float: left;
+  margin-top: 0;
+}
