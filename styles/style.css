@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BaiJam";
-  src: url("assets/Bai_Jamjuree/BaiJamjuree-Regular.ttf");
+  src: url("/assets/Bai_Jamjuree/BaiJamjuree-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
   --green: #26bba4;
   --white: #ffff;
   --back: #4c545c;
-  --blue:#1500CC;
+  --blue:#6174ff;
   --text:#9EABB2;
 }
 html {
@@ -32,11 +32,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: var(--text)
-  background-image: url("/assets/bg-header-mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-background-color:var(--white);
+  color: var(--text);
+  background-image:url("/assets/bg-header-mobile.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-color:var(--white);
 
   font-family: BaiJam, Ubuntu;
   text-align:center;
@@ -45,7 +45,7 @@ background-color:var(--white);
 
 }
 header h1{
-  background-image: url("/assets/logo.svg");
+  background-image:url("/assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 125px;
@@ -61,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0;
+  margin: 1em 0.1em;
   font-style: italic;
 }
 h2{
@@ -101,7 +101,6 @@ a:hover {
 .cta-btns a{
   display: block;
   color: var(--white);
-  box-shadow: inset 0px -3px 0px rgba(0,0,0, 0.151333);
 
   text-align: center;
   padding: 1em 1.5em;
@@ -110,19 +109,24 @@ a:hover {
   border-radius: 28px;
 
   margin: 1em auto;
+  /* this does not work / inset: 0px -3px 0px rgba(0, 0, 0, 0.151333); */
 }
 .cta-btns a:hover {
   color: var(--white);
-
+  opacity: 0.8;
 
 }
 .cta-btns a.ios {
-  background: color:var(var(--green));
+  background: var(--green);
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
+  inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 
   
 }
 .cta-btns a.mac {
-	background: color:var(--blue);
+	background: var(--blue);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.0988035),
+  inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
 
 .keep-track img{
